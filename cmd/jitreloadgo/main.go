@@ -37,6 +37,12 @@ func main() {
 		os.Exit(1)
 	}
 
+	// Clean up on exit
+	defer func() {
+		procManager.StopProcess()
+		watcher.Close()
+	}()
+
 	// Handle rebuilds
 	go func() {
 		for range watcher.Watch() {
