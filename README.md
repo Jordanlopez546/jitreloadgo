@@ -20,7 +20,7 @@ You can install JITReloadGo in several ways:
 ### 1. Direct Installation from GitHub
 
 ```bash
-go install github.com/JeeTix/jitreloadgo/cmd/jitreloadgo@latest
+go install github.com/Jordanlopez546/jitreloadgo/cmd/jitreloadgo@latest
 ```
 
 ## Building From Source
